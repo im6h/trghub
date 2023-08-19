@@ -1,0 +1,3 @@
+**/secret.*
+**/.terragrunt-cache
+**/.terraform.lock.hcl
