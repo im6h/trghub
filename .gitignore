@@ -1,3 +1,5 @@
 **/secret.*
 **/.terragrunt-cache
 **/.terraform.lock.hcl
+.DS_Store
+**/env.yaml
