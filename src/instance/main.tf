@@ -10,4 +10,5 @@ resource "vultr_instance" "v_instance" {
   ssh_key_ids       = var.instance.ssh_keys
   vpc_ids           = var.instance.vpc_ids
   firewall_group_id = var.instance.firewall_group_id
+  script_id         = var.instance.script_id
 }

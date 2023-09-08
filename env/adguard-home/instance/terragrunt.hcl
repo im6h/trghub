@@ -28,6 +28,10 @@ dependency "firewall" {
   // }
 }
 
+dependency "script" {
+  config_path = "../user_scripts"
+}
+
 locals {
   ice = include.root.inputs["ice"]
 }
@@ -39,6 +43,7 @@ inputs = {
     vpc_ids           = [dependency.vpc.outputs.vpc_id]
     ssh_keys          = [dependency.ssh.outputs.ssh_id]
     firewall_group_id = dependency.firewall.outputs.fwg
+    script_id         = dependency.script.outputs.script_id
 
     core    = local.ice.core
     ram     = local.ice.ram
@@ -46,8 +51,6 @@ inputs = {
     backups = local.ice.backups
     tags    = local.ice.tags
     os_id   = local.ice.os_id
-    kind    = local.ice.kind 
+    kind    = local.ice.kind
   }
-
-
 }

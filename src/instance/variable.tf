@@ -10,6 +10,7 @@ variable "instance" {
     ssh_keys          = list(string)
     vpc_ids           = list(string)
     firewall_group_id = string
+    script_id         = string
   })
 
   validation {
