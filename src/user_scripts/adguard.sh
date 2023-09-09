@@ -17,7 +17,7 @@ sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
 sudo systemctl reload-or-restart systemd-resolved
 
 # install newrelic
-curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash && sudo NEW_RELIC_API_KEY=NRAK-VQ6UP8JW5E66UZHV1AVC7CN735M NEW_RELIC_ACCOUNT_ID=4087408 /usr/local/bin/newrelic install -y
+
 
 # install docker
 curl -fsSL https://get.docker.com -o get-docker.sh
