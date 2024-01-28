@@ -30,6 +30,5 @@ docker run --name adguardhome\
     --restart unless-stopped\
     -v ./:/opt/adguardhome/work\
     -v ./:/opt/adguardhome/conf\
-    -p 53:53/tcp -p 53:53/udp\
     -p 80:80/tcp -p 443:443/tcp -p 443:443/udp -p 3000:3000/tcp\
     -d adguard/adguardhome
